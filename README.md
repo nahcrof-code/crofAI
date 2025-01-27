@@ -79,8 +79,9 @@ axios.post('https://ai.nahcrof.com/v1/{MODEL-TIER}/{MODEL-NAME}', payload, { hea
         console.error(error);
     });
 ```
-# Specific API JSON examples
+# Specific API examples
 ## stable-diffusion-xl-base-1.0 (BETA)
+### JSON
 POST /v1/premium/stable_diffusion<br>
 HEADERS:<br>
 ```
@@ -97,4 +98,21 @@ RESPONSE 200 OK
 {
     "response": "AI response"
 }
+```
+### Python
+```python
+import requests
+import json
+headers = {"X-API-Key": "myapikey"}
+payload = {
+    "prompt": "cat"
+}
+r1 = requests.post(url=f'https://ai.nahcrof.com/v1/free/stable_diffusion', json=payload, headers=headers)
+value = r1.json()
+try:
+    with open("generated_image.png", "wb") as f:
+        f.write(eval(value["response"]))
+except KeyError:
+    print(value)
+# good luck writing this in any other language, I'm so confused :)
 ```
