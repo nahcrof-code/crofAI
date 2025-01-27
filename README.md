@@ -79,6 +79,18 @@ axios.post('https://ai.nahcrof.com/v1/{MODEL-TIER}/{MODEL-NAME}', payload, { hea
         console.error(error);
     });
 ```
+AI models / API MODEL-NAME
+```
+llama3-8b-Instruct - /free/llama3
+llama3.1-8b-Instruct - /free/llama3.1-8b
+llama3-70b-Instruct - /free/llama3_70b
+tinyllama-1.1b-chat - /free/tinyllama
+gemma-7b-it - /free/gemma_7b
+stable-diffusion-xl-base-1.0 - /free/stable_diffusion
+qwen1.5-0.5b-chat - /free/qwen0.5
+mistral-7b-Instruct - /free/mistral-7b-instruct
+```
+
 # Specific API examples
 ## stable-diffusion-xl-base-1.0 (BETA)
 ### JSON
