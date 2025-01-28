@@ -3,7 +3,7 @@ API documentation for crofAI
 
 # API format
 ## JSON
-POST /v1/{MODEL-TIER}/{MODEL-NAME}<br>
+POST /v1/free/{MODEL-NAME}<br>
 HEADERS:<br>
 ```
 X-API-Key: api-token-here
@@ -45,7 +45,7 @@ payload = {
     ],
     "max_tokens": 500
 }
-r1 = requests.post(url=f'https://ai.nahcrof.com/v1/{MODEL-TIER}/{MODEL-NAME}', json=payload, headers=headers)
+r1 = requests.post(url=f'https://ai.nahcrof.com/v1/free/{MODEL-NAME}', json=payload, headers=headers)
 value = r1.json()
 try:
     print(value["response"])
@@ -63,7 +63,7 @@ const payload = {
     ],
         max_tokens: 500
     };
-axios.post('https://ai.nahcrof.com/v1/{MODEL-TIER}/{MODEL-NAME}', payload, { headers })
+axios.post('https://ai.nahcrof.com/v1/free/{MODEL-NAME}', payload, { headers })
     .then((response: AxiosResponse<{ response: string }>) => {
         try {
             console.log(response.data.response);
