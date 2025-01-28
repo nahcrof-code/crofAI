@@ -83,6 +83,7 @@ AI models / API MODEL-NAME
 ```
 llama3-8b-Instruct - /free/llama3
 llama3.1-8b-Instruct - /free/llama3.1-8b
+llama3.2-1b-Instruct - /free/llama3.2-1b
 llama3-70b-Instruct - /free/llama3_70b
 tinyllama-1.1b-chat - /free/tinyllama
 gemma-7b-it - /free/gemma_7b
