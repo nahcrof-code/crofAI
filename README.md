@@ -79,18 +79,18 @@ axios.post('https://ai.nahcrof.com/v1/free/{MODEL-NAME}', payload, { headers })
         console.error(error);
     });
 ```
-AI models / API MODEL-NAME
+# AI models / API MODEL-NAME
 ```
-llama3-8b-Instruct - /free/llama3
-llama3.1-8b-Instruct - /free/llama3.1-8b
-llama3.2-1b-Instruct - /free/llama3.2-1b
-llama3-70b-Instruct - /free/llama3_70b
-llama3.3-70b-Instruct - /free/llama3.3-70b
-tinyllama-1.1b-chat - /free/tinyllama
-gemma-7b-it - /free/gemma_7b
+llama3-8b-Instruct - /free/llama3 (~550 tokens/second)
+llama3.1-8b-Instruct - /free/llama3.1-8b (~500 tokens/second)
+llama3.2-1b-Instruct - /free/llama3.2-1b (~250 tokens/second)
+llama3-70b-Instruct - /free/llama3_70b (~150 tokens/second)
+llama3.3-70b-Instruct - /free/llama3.3-70b (~430 tokens/second)
+tinyllama-1.1b-chat - /free/tinyllama (~80 tokens/second)
+gemma-7b-it - /free/gemma_7b (~20 tokens/second)*
 stable-diffusion-xl-base-1.0 - /free/stable_diffusion
-qwen1.5-0.5b-chat - /free/qwen0.5
-mistral-7b-Instruct - /free/mistral-7b-instruct
+qwen1.5-0.5b-chat - /free/qwen0.5 (~100 tokens/second)*
+mistral-7b-Instruct - /free/mistral-7b-instruct (~70 tokens/second)*
 ```
 
 # Specific API examples
@@ -130,3 +130,5 @@ except KeyError:
     print(value)
 # good luck writing this in any other language, I'm so confused :)
 ```
+# Important notes
+models with asterisks in the AI models section were pointed out for their relatively low speeds. These are models we typically see low usage of. We would absolutely consider allocating more resources to such models, in the event that the community displayed an increase in desire for them. 
