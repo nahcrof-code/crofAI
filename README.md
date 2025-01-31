@@ -1,6 +1,7 @@
 # [CrofAI](https://ai.nahcrof.com/)
 API documentation for crofAI
-
+## Donation page 
+https://buymeacoffee.com/crofai
 # API format
 ## JSON
 POST /v1/free/{MODEL-NAME}<br>
