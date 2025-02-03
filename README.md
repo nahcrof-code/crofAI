@@ -84,7 +84,7 @@ axios.post('https://ai.nahcrof.com/v1/free/{MODEL-NAME}', payload, { headers })
 ```
 llama3-8b-Instruct - /free/llama3 (~550 tokens/second)
 llama3.1-8b-Instruct - /free/llama3.1-8b (~500 tokens/second)
-llama3.2-1b-Instruct - /free/llama3.2-1b (~754 tokens/second)
+llama3.2-1b-Instruct - /free/llama3.2-1b (~1500 tokens/second)
 llama3-70b-Instruct - /free/llama3_70b (~150 tokens/second)
 llama3.3-70b-Instruct - /free/llama3.3-70b (~1000 tokens/second)
 tinyllama-1.1b-chat - /free/tinyllama (~100 tokens/second)
@@ -92,6 +92,7 @@ gemma-7b-it - /free/gemma_7b (~20 tokens/second)*
 stable-diffusion-xl-base-1.0 - /free/stable_diffusion
 qwen1.5-0.5b-chat - /free/qwen0.5 (~100 tokens/second)*
 mistral-7b-Instruct - /free/mistral-7b-instruct (~70 tokens/second)*
+deepseek-r1-distill-llama-70b - /free/deepseek-r1 (~20 tokens/second)
 deepseek-r1-distill-llama-70b - /free/deepseek-r1-distill-llama-70b (~700 tokens/second)
 deepseek-r1-distill-qwen-32b - /free/deepseek-r1-distill-qwen-32b (~419 tokens/second)
 ```
@@ -106,7 +107,7 @@ Low speed example: ~400 tokens/second
 Highest speed seen: ~600 tokens/second
 
 llama3.2-1b-Instruct - ~750 tokens/second
-Low speed example: ~200 tokens/second
+Low speed example: ~1,000 tokens/second
 Highest speed seen: ~41,873 tokens/second
 
 llama3-70b-Instruct - ~150 tokens/second
@@ -140,6 +141,10 @@ Highest speed seen: ~5,547 tokens/second
 deepseek-r1-distill-qwen-32b - ~419 tokens/second
 Low speed example: ~55 tokens/second
 Highest speed seen: ~7,849 tokens/second
+
+deepseek-r1 - ~21 tokens/second
+Low speed example: ~5 tokens/second
+Highest speed seen: ~113 tokens/second
 ```
 Models with drastically higher "highest speed seen(s)" are testing a new method of inferencing, the lower speed is significantly more common, but there is a chance for inferences to see the highest speed, just don't bet on it.
 Models Like mistral-7b and qwen0.5b see little to no usage, we will be implementing higher speeds on the least used models last.
