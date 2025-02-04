@@ -87,7 +87,7 @@ llama3.1-8b-Instruct - /free/llama3.1-8b (~500 tokens/second)
 llama3.2-1b-Instruct - /free/llama3.2-1b (~1500 tokens/second)
 llama3-70b-Instruct - /free/llama3_70b (~150 tokens/second)
 llama3.3-70b-Instruct - /free/llama3.3-70b (~1000 tokens/second)
-llama3.1-405b - /free/llama3.1-405b (~30 tokens/second)
+llama3.1-405b - /free/llama3.1-405b (~50 tokens/second)
 tinyllama-1.1b-chat - /free/tinyllama (~100 tokens/second)
 gemma-7b-it - /free/gemma_7b (~20 tokens/second)*
 stable-diffusion-xl-base-1.0 - /free/stable_diffusion
