@@ -93,7 +93,7 @@ gemma-7b-it - /free/gemma_7b (~20 tokens/second)*
 stable-diffusion-xl-base-1.0 - /free/stable_diffusion
 qwen1.5-0.5b-chat - /free/qwen0.5 (~100 tokens/second)*
 mistral-7b-Instruct - /free/mistral-7b-instruct (~70 tokens/second)*
-deepseek-r1-distill-llama-70b - /free/deepseek-r1 (~20 tokens/second)
+deepseek-r1 - /free/deepseek-r1 (~20 tokens/second)
 deepseek-r1-distill-llama-70b - /free/deepseek-r1-distill-llama-70b (~700 tokens/second)
 deepseek-r1-distill-qwen-32b - /free/deepseek-r1-distill-qwen-32b (~419 tokens/second)
 ```
