@@ -216,7 +216,6 @@ socket.emit("start_stream", "TOKEN_GOES_HERE")
 
 @socket.on("chunk")
 def handle_chunk(data):
-    start.append(time.time())
     if data == "ENDOFMESSAGE": # disconnect at end of response
         socket.disconnect()
         print("")
