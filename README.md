@@ -94,7 +94,8 @@ gemma-7b-it - /free/gemma_7b (~20 tokens/second)*
 stable-diffusion-xl-base-1.0 - /free/stable_diffusion
 qwen1.5-0.5b-chat - /free/qwen0.5 (~100 tokens/second)*
 mistral-7b-Instruct - /free/mistral-7b-instruct (~70 tokens/second)*
-deepseek-r1 - /free/deepseek-r1 (~20 tokens/second)
+deepseek-r1 - /free/deepseek-r1 (~15 tokens/second)
+deepseek-v3 - /free/deepseek-v3 (~10 tokens/second)
 deepseek-r1-distill-llama-70b - /free/deepseek-r1-distill-llama-70b (~700 tokens/second)
 deepseek-r1-distill-qwen-32b - /free/deepseek-r1-distill-qwen-32b (~419 tokens/second)
 ```
@@ -148,9 +149,13 @@ deepseek-r1-distill-qwen-32b - ~419 tokens/second
 Low speed example: ~55 tokens/second
 Highest speed seen: ~7,849 tokens/second
 
-deepseek-r1 - ~21 tokens/second
+deepseek-r1 - ~16 tokens/second
 Low speed example: ~5 tokens/second
 Highest speed seen: ~113 tokens/second
+
+deepseek-v3 - ~10 tokens/second
+Low speed example: ~5 tokens/second
+Highest speed seen: ~60 tokens/second
 ```
 Models with drastically higher "highest speed seen(s)" are testing a new method of inferencing, the lower speed is significantly more common, but there is a chance for inferences to see the highest speed, just don't bet on it.
 Models Like mistral-7b and qwen0.5b see little to no usage, we will be implementing higher speeds on the least used models last.
