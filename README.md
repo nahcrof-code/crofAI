@@ -121,8 +121,12 @@ llama3.3-70b-Instruct - ~1000 tokens/second
 Low speed example: ~700 tokens/second
 Highest speed seen: ~15,620 tokens/second
 
-llama3.1-405b-Instruct - ~50 tokens/second
-Low speed example: ~35 tokens/second
+llama3.1-405b-Instruct - ~10 tokens/second
+Low speed example: ~7 tokens/second
+Highest speed seen: ~156 tokens/second
+
+llama3.1-tulu-3-405b - ~60 tokens/second
+Low speed example: ~50 tokens/second
 Highest speed seen: ~156 tokens/second
 
 tinyllama-1.1b-chat - ~100 tokens/second
