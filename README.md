@@ -82,43 +82,43 @@ axios.post('https://ai.nahcrof.com/v1/free/{MODEL-NAME}', payload, { headers })
 ```
 # AI models / API MODEL-NAME
 ```
-llama3-8b-Instruct - /free/llama3 (~550 tokens/second)
-llama3.1-8b-Instruct - /free/llama3.1-8b (~500 tokens/second)
-llama3.2-1b-Instruct - /free/llama3.2-1b (~1500 tokens/second)
-llama3-70b-Instruct - /free/llama3_70b (~150 tokens/second)
-llama3.3-70b-Instruct - /free/llama3.3-70b (~1000 tokens/second)
-llama3.1-405b - /free/llama3.1-405b (~50 tokens/second)
-llama3.1-tulu-405b - /free/llama3.1-tulu-405b (~15 tokens/second)
-tinyllama-1.1b-chat - /free/tinyllama (~100 tokens/second)
-gemma-7b-it - /free/gemma_7b (~20 tokens/second)*
+llama3-8b-Instruct - /free/llama3
+llama3.1-8b-Instruct - /free/llama3.1-8b
+llama3.2-1b-Instruct - /free/llama3.2-1b
+llama3-70b-Instruct - /free/llama3_70b
+llama3.3-70b-Instruct - /free/llama3.3-70b
+llama3.1-405b - /free/llama3.1-405b
+llama3.1-tulu-405b - /free/llama3.1-tulu-405b
+tinyllama-1.1b-chat - /free/tinyllama
+gemma-7b-it - /free/gemma_7b
 stable-diffusion-xl-base-1.0 - /free/stable_diffusion
-qwen1.5-0.5b-chat - /free/qwen0.5 (~100 tokens/second)*
-mistral-7b-Instruct - /free/mistral-7b-instruct (~70 tokens/second)*
-deepseek-r1 - /free/deepseek-r1 (~15 tokens/second)
-deepseek-v3 - /free/deepseek-v3 (~10 tokens/second)
-deepseek-r1-distill-llama-70b - /free/deepseek-r1-distill-llama-70b (~700 tokens/second)
-deepseek-r1-distill-qwen-32b - /free/deepseek-r1-distill-qwen-32b (~419 tokens/second)
+qwen1.5-0.5b-chat - /free/qwen0.5
+mistral-7b-Instruct - /free/mistral-7b-instruct
+deepseek-r1 - /free/deepseek-r1
+deepseek-v3 - /free/deepseek-v3
+deepseek-r1-distill-llama-70b - /free/deepseek-r1-distill-llama-70b
+deepseek-r1-distill-qwen-32b - /free/deepseek-r1-distill-qwen-32b
 ```
 # LLM average speeds (tokens/second)
 ```
 llama3-8b-Instruct - ~550 tokens/second
 Low speed example: ~300 tokens/second
-Highest speed seen: ~800 tokens/second
+Highest speed seen: ~901 tokens/second
 
 llama3.1-8b-Instruct - ~500 tokens/second
 Low speed example: ~400 tokens/second
-Highest speed seen: ~600 tokens/second
+Highest speed seen: ~595 tokens/second
 
-llama3.2-1b-Instruct - ~750 tokens/second
-Low speed example: ~1,000 tokens/second
+llama3.2-1b-Instruct - ~1,900 tokens/second
+Low speed example: ~400 tokens/second
 Highest speed seen: ~41,873 tokens/second
 
 llama3-70b-Instruct - ~150 tokens/second
 Low speed example: ~90 tokens/second
-Highest speed seen: ~187 tokens/second
+Highest speed seen: ~277 tokens/second
 
 llama3.3-70b-Instruct - ~1000 tokens/second
-Low speed example: ~700 tokens/second
+Low speed example: ~500 tokens/second
 Highest speed seen: ~15,620 tokens/second
 
 llama3.1-405b-Instruct - ~10 tokens/second
@@ -126,8 +126,8 @@ Low speed example: ~7 tokens/second
 Highest speed seen: ~156 tokens/second
 
 llama3.1-tulu-3-405b - ~60 tokens/second
-Low speed example: ~50 tokens/second
-Highest speed seen: ~156 tokens/second
+Low speed example: ~8 tokens/second
+Highest speed seen: ~595 tokens/second
 
 tinyllama-1.1b-chat - ~100 tokens/second
 Low speed example: ~50 tokens/second
@@ -149,8 +149,8 @@ deepseek-r1-distill-llama-70b - ~700 tokens/second
 Low speed example: ~250 tokens/second
 Highest speed seen: ~5,547 tokens/second
 
-deepseek-r1-distill-qwen-32b - ~419 tokens/second
-Low speed example: ~55 tokens/second
+deepseek-r1-distill-qwen-32b - ~800 tokens/second
+Low speed example: ~300 tokens/second
 Highest speed seen: ~7,849 tokens/second
 
 deepseek-r1 - ~16 tokens/second
