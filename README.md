@@ -257,6 +257,7 @@ socket.on("chunk", (data) => {
 data = {
     model: "MODEL", // AI model, same name as trailing /free/ endpoint
     context: [{role: "user", content: "summarize the titanic"}],
+    token: "TOKEN"
 }
 socket.emit("prompt", JSON.stringify(data));  
 ```
