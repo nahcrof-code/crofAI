@@ -153,9 +153,9 @@ deepseek-r1-distill-qwen-32b - ~800 tokens/second
 Low speed example: ~300 tokens/second
 Highest speed seen: ~7,849 tokens/second
 
-deepseek-r1 - ~16 tokens/second
-Low speed example: ~5 tokens/second
-Highest speed seen: ~113 tokens/second
+deepseek-r1 - ~300 tokens/second
+Low speed example: ~350 tokens/second
+Highest speed seen: ~637 tokens/second
 
 deepseek-v3 - ~10 tokens/second
 Low speed example: ~5 tokens/second
