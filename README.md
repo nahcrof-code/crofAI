@@ -157,9 +157,9 @@ deepseek-r1 - ~300 tokens/second
 Low speed example: ~350 tokens/second
 Highest speed seen: ~637 tokens/second
 
-deepseek-v3 - ~10 tokens/second
-Low speed example: ~5 tokens/second
-Highest speed seen: ~60 tokens/second
+deepseek-v3 - ~60 tokens/second
+Low speed example: ~30 tokens/second
+Highest speed seen: ~314 tokens/second
 ```
 Models with drastically higher "highest speed seen(s)" are testing a new method of inferencing, the lower speed is significantly more common, but there is a chance for inferences to see the highest speed, just don't bet on it.
 Models Like mistral-7b and qwen0.5b see little to no usage, we will be implementing higher speeds on the least used models last.
