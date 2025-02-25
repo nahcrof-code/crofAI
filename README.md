@@ -2,102 +2,59 @@
 API documentation for crofAI
 ## Donation page 
 https://buymeacoffee.com/crofai
-# API format
-## JSON
-POST /v1/free/{MODEL-NAME}<br>
-HEADERS:<br>
-```
-X-API-Key: api-token-here
-```
-BODY (application/json)
-```json
-{
-    "messages": [
-    {
-        "role": "system",
-        "content": "system message content"
-    },
-    {
-        "role": "user",
-        "content": "user message content"
-    }],
-    "max_tokens": 300
-}
-```
-RESPONSE 200 OK
-```json
-{
-    "response": "AI response"
-}
-```
-Please note that model names are not always obvious, if your guess for the model name doesn't work, please return to the docs. Also note that speeds may vary between each model.
-
-It is also important to note that this format does not work for stable-diffusion.
-To use stable diffusion please refer to the bottom of the premium models section, or the bottom of the code examples section.
-## Python
+# API/SDK
+CrofAI supports the OpenAI SDK for LLM inference. Below will be a python example.
+## Python (No Streaming)
 ```python
-import requests
-import json
-headers = {"X-API-Key": "myapikey"}
-payload = {
-    "messages": [
-        {"role": "system", "content": "system message content"},
-        {"role": "user", "content": "user message content"}
-    ],
-    "max_tokens": 500
-}
-r1 = requests.post(url=f'https://ai.nahcrof.com/v1/free/{MODEL-NAME}', json=payload, headers=headers)
-value = r1.json()
-try:
-    print(value["response"])
-except KeyError:
-    print(value)
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://ai.nahcrof.com/v2",
+    api_key="optional-api-key"
+)
+response = client.chat.completions.create(
+    model="MODEL-FROM-LIST",
+    messages=[
+        {"role": "user", "content": "Hello!"}
+    ]
+)
+print(response.choices[0].message.content)
 ```
-## TypeScript
-```typescript
-import axios, { AxiosResponse } from 'axios';
-const headers = { 'X-API-Key': 'myapikey' };
-const payload = {
-    messages: [
-        { role: 'system', content: 'system message content' },
-        { role: 'user', content: 'user message content' }
+## Python (With Streaming)
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://ai.nahcrof.com/v2",
+    api_key="optional-api-key"
+)
+
+response = client.chat.completions.create(
+    model="MODEL-FROM-LIST",
+    messages=[
+        {"role": "user", "content": "Howdy there! How are you?"}
     ],
-        max_tokens: 500
-    };
-axios.post('https://ai.nahcrof.com/v1/free/{MODEL-NAME}', payload, { headers })
-    .then((response: AxiosResponse<{ response: string }>) => {
-        try {
-            console.log(response.data.response);
-        } catch (error) {
-            if (error instanceof Error && error.name === 'TypeError') {
-                console.log(response.data);
-            } else {
-                throw error;
-            }
-        }
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+    stream=True  # Enable streaming
+)
+
+for chunk in response:
+    if chunk.choices and chunk.choices[0].delta.content:
+        print(chunk.choices[0].delta.content, end="", flush=True)
 ```
+
 # AI models / API MODEL-NAME
 ```
-llama3-8b-Instruct - /free/llama3
-llama3.1-8b-Instruct - /free/llama3.1-8b
-llama3.2-1b-Instruct - /free/llama3.2-1b
-llama3-70b-Instruct - /free/llama3_70b
-llama3.3-70b-Instruct - /free/llama3.3-70b
-llama3.1-405b - /free/llama3.1-405b
-llama3.1-tulu-405b - /free/llama3.1-tulu-405b
-tinyllama-1.1b-chat - /free/tinyllama
-gemma-7b-it - /free/gemma_7b
-stable-diffusion-xl-base-1.0 - /free/stable_diffusion
-qwen1.5-0.5b-chat - /free/qwen0.5
-mistral-7b-Instruct - /free/mistral-7b-instruct
-deepseek-r1 - /free/deepseek-r1
-deepseek-v3 - /free/deepseek-v3
-deepseek-r1-distill-llama-70b - /free/deepseek-r1-distill-llama-70b
-deepseek-r1-distill-qwen-32b - /free/deepseek-r1-distill-qwen-32b
+llama3-8b
+llama3.1-8b
+llama3.3-70b
+llama3.2-1b
+llama3-70b
+llama3.1-405b
+llama3.1-tulu3-405b
+deepseek-r1
+deepseek-v3
+deepseek-r1-distill-llama-70b
+deepseek-r1-distill-qwen-32b
 ```
 # LLM average speeds (tokens/second)
 ```
@@ -128,22 +85,6 @@ Highest speed seen: ~156 tokens/second
 llama3.1-tulu-3-405b - ~60 tokens/second
 Low speed example: ~8 tokens/second
 Highest speed seen: ~595 tokens/second
-
-tinyllama-1.1b-chat - ~100 tokens/second
-Low speed example: ~50 tokens/second
-Highest speed seen: ~130 tokens/second
-
-gemma-7b-it - ~20 tokens/second
-Low speed example: ~20 tokens/second
-Highest speed seen: ~32 tokens/second
-
-qwen1.5-0.5b-chat - ~100 tokens/second*
-Low speed example: ~60 tokens/second
-Highest speed seen: ~114 tokens/second
-
-mistral-7b-Instruct - ~70 tokens/second*
-Low speed example: ~50 tokens/second
-Highest speed seen: ~83 tokens/second
 
 deepseek-r1-distill-llama-70b - ~700 tokens/second
 Low speed example: ~250 tokens/second
