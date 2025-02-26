@@ -58,49 +58,49 @@ deepseek-r1-distill-qwen-32b
 ```
 # LLM average speeds (tokens/second)
 ```
-llama3-8b-Instruct - ~550 tokens/second
+llama3-8b
 Low speed example: ~300 tokens/second
-Highest speed seen: ~901 tokens/second
+Average Speed: ~550 tokens/second
 
-llama3.1-8b-Instruct - ~500 tokens/second
+llama3.1-8b
 Low speed example: ~400 tokens/second
-Highest speed seen: ~595 tokens/second
+Average speed: ~500 tokens/second
 
-llama3.2-1b-Instruct - ~1,900 tokens/second
+llama3.2-1b
 Low speed example: ~400 tokens/second
-Highest speed seen: ~41,873 tokens/second
+Average speed: ~2,000 tokens/second
 
-llama3-70b-Instruct - ~150 tokens/second
+llama3-70b
 Low speed example: ~90 tokens/second
-Highest speed seen: ~277 tokens/second
+Average speed: ~150 tokens/second
 
-llama3.3-70b-Instruct - ~1000 tokens/second
-Low speed example: ~500 tokens/second
-Highest speed seen: ~15,620 tokens/second
+llama3.3-70b
+Low speed example: ~90 tokens/second
+Average speed: ~1,000
 
-llama3.1-405b-Instruct - ~10 tokens/second
+llama3.1-405b-Instruct
 Low speed example: ~7 tokens/second
-Highest speed seen: ~156 tokens/second
+Average speed: ~10 tokens/second
 
-llama3.1-tulu-3-405b - ~60 tokens/second
+llama3.1-tulu-3-405b
 Low speed example: ~8 tokens/second
-Highest speed seen: ~595 tokens/second
+Average speed: ~60 tokens/second
 
-deepseek-r1-distill-llama-70b - ~700 tokens/second
-Low speed example: ~250 tokens/second
-Highest speed seen: ~5,547 tokens/second
+deepseek-r1-distill-llama-70b
+Low speed example: ~60 tokens/second
+Average speed: ~250 tokens/second
 
-deepseek-r1-distill-qwen-32b - ~800 tokens/second
-Low speed example: ~300 tokens/second
-Highest speed seen: ~7,849 tokens/second
+deepseek-r1-distill-qwen-32b
+Low speed example: ~50 tokens/second
+Average speed: ~230 tokens/second
 
-deepseek-r1 - ~300 tokens/second
-Low speed example: ~350 tokens/second
-Highest speed seen: ~637 tokens/second
+deepseek-r1
+Low speed example: ~40 tokens/second
+Average speed: ~200 tokens/second
 
-deepseek-v3 - ~60 tokens/second
+deepseek-v3
 Low speed example: ~30 tokens/second
-Highest speed seen: ~314 tokens/second
+Average speed: ~150 tokens/second
 ```
 Models with drastically higher "highest speed seen(s)" are testing a new method of inferencing, the lower speed is significantly more common, but there is a chance for inferences to see the highest speed, just don't bet on it.
 Models Like mistral-7b and qwen0.5b see little to no usage, we will be implementing higher speeds on the least used models last.
