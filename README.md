@@ -55,6 +55,7 @@ deepseek-r1
 deepseek-v3
 deepseek-r1-distill-llama-70b
 deepseek-r1-distill-qwen-32b
+qwen-qwq-32b
 ```
 # LLM average speeds (tokens/second)
 ```
