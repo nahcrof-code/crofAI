@@ -103,7 +103,7 @@ deepseek-v3
 Low speed example: ~30 tokens/second
 Average speed: ~150 tokens/second
 
-deepseek-v3
+qwen-qwq-32b
 Low speed example: ~30 tokens/second
 Average speed: ~300 tokens/second
 ```
