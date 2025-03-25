@@ -53,6 +53,7 @@ llama3.1-405b
 llama3.1-tulu3-405b
 deepseek-r1
 deepseek-v3
+deepseek-v3-0324
 deepseek-r1-distill-llama-70b
 deepseek-r1-distill-qwen-32b
 qwen-qwq-32b
@@ -103,6 +104,10 @@ Average speed: ~200 tokens/second
 deepseek-v3
 Low speed example: ~30 tokens/second
 Average speed: ~150 tokens/second
+
+deepseek-v3-0324
+Low speed example: ~25 tokens/second
+Average speed: ~80 tokens/second
 
 qwen-qwq-32b
 Low speed example: ~30 tokens/second
