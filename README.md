@@ -59,6 +59,7 @@ deepseek-r1-distill-qwen-32b
 qwen-qwq-32b
 gemma-3-27b-it
 deepseek-v3-0324
+llama-4-scout-131k
 ```
 # LLM average speeds (tokens/second)
 ```
@@ -121,6 +122,10 @@ Average speed: ~90 tokens/second
 deepseek-v3-0324
 Low speed example: ~20 tokens/second
 Average speed: ~60 tokens/second
+
+llama-4-scout-131k
+Low speed example: ~50 tokens/second
+Average speed: ~80 tokens/second
 ```
 Models with drastically higher "highest speed seen(s)" are testing a new method of inferencing, the lower speed is significantly more common, but there is a chance for inferences to see the highest speed, just don't bet on it.
 Models Like mistral-7b and qwen0.5b see little to no usage, we will be implementing higher speeds on the least used models last.
