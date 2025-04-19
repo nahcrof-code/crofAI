@@ -61,59 +61,41 @@ llama-4-scout
 ```
 
 llama3.1-8b
-Low speed example: ~400 tokens/second
-Average speed: ~500 tokens/second
+Average speed: ~30 tokens/second
 
 llama3.3-70b
-Low speed example: ~90 tokens/second
-Average speed: ~1,000
+Average speed: ~30 tokens/second
 
 llama3.1-405b-Instruct
-Low speed example: ~7 tokens/second
-Average speed: ~10 tokens/second
+Average speed: ~30 tokens/second
 
 llama3.1-tulu-3-405b
-Low speed example: ~8 tokens/second
-Average speed: ~60 tokens/second
+Average speed: ~30 tokens/second
 
 deepseek-r1-distill-llama-70b
-Low speed example: ~60 tokens/second
-Average speed: ~250 tokens/second
+Average speed: ~30 tokens/second
 
 deepseek-r1-distill-qwen-32b
-Low speed example: ~50 tokens/second
-Average speed: ~230 tokens/second
+Average speed: ~50 tokens/second
 
 deepseek-r1
-Low speed example: ~40 tokens/second
-Average speed: ~200 tokens/second
+Average speed: ~25 tokens/second
 
 deepseek-v3
-Low speed example: ~30 tokens/second
-Average speed: ~150 tokens/second
+Average speed: ~35 tokens/second
 
 deepseek-v3-0324
-Low speed example: ~25 tokens/second
-Average speed: ~80 tokens/second
+Average speed: ~35 tokens/second
 
 qwen-qwq-32b
-Low speed example: ~30 tokens/second
-Average speed: ~300 tokens/second
+Average speed: ~25 tokens/second
 
 gemma-3-27b-it
-Low speed example: ~20 tokens/second
-Average speed: ~90 tokens/second
-
-deepseek-v3-0324
-Low speed example: ~20 tokens/second
-Average speed: ~60 tokens/second
+Average speed: ~80 tokens/second
 
 llama-4-scout
-Low speed example: ~50 tokens/second
-Average speed: ~80 tokens/second
+Average speed: ~65 tokens/second
 ```
-Models with drastically higher "highest speed seen(s)" are testing a new method of inferencing, the lower speed is significantly more common, but there is a chance for inferences to see the highest speed, just don't bet on it.
-Models Like mistral-7b and qwen0.5b see little to no usage, we will be implementing higher speeds on the least used models last.
 # Specific API examples
 ## stable-diffusion-xl-base-1.0 (BETA)
 ### JSON
