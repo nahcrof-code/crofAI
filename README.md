@@ -44,11 +44,8 @@ for chunk in response:
 
 # AI models / API MODEL-NAME
 ```
-llama3-8b
 llama3.1-8b
 llama3.3-70b
-llama3.2-1b
-llama3-70b
 llama3.1-405b
 llama3.1-tulu3-405b
 deepseek-r1
@@ -63,21 +60,10 @@ llama-4-scout-131k
 ```
 # LLM average speeds (tokens/second)
 ```
-llama3-8b
-Low speed example: ~300 tokens/second
-Average Speed: ~550 tokens/second
 
 llama3.1-8b
 Low speed example: ~400 tokens/second
 Average speed: ~500 tokens/second
-
-llama3.2-1b
-Low speed example: ~400 tokens/second
-Average speed: ~2,000 tokens/second
-
-llama3-70b
-Low speed example: ~90 tokens/second
-Average speed: ~150 tokens/second
 
 llama3.3-70b
 Low speed example: ~90 tokens/second
