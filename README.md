@@ -55,7 +55,7 @@ deepseek-r1-distill-llama-70b
 deepseek-r1-distill-qwen-32b
 qwen-qwq-32b
 gemma-3-27b-it
-llama-4-scout-131k
+llama-4-scout
 ```
 # LLM average speeds (tokens/second)
 ```
@@ -108,7 +108,7 @@ deepseek-v3-0324
 Low speed example: ~20 tokens/second
 Average speed: ~60 tokens/second
 
-llama-4-scout-131k
+llama-4-scout
 Low speed example: ~50 tokens/second
 Average speed: ~80 tokens/second
 ```
