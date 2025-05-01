@@ -57,6 +57,7 @@ deepseek-r1-distill-qwen-32b
 qwen-qwq-32b
 gemma-3-27b-it
 llama-4-scout
+qwen3-235b-a22b
 ```
 # LLM average speeds (tokens/second)
 ```
@@ -99,6 +100,9 @@ Average speed: ~80 tokens/second
 
 llama-4-scout
 Average speed: ~65 tokens/second
+
+qwen3-235b-a22b
+Average speed: ~60 tokens/second
 ```
 # Specific API examples
 ## stable-diffusion-xl-base-1.0 (BETA)
