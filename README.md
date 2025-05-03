@@ -83,7 +83,7 @@ Average speed: ~50 tokens/second
 deepseek-r1
 Average speed: ~25 tokens/second
 
-deepseek-r1
+deepseek-r1-turbo
 Average speed: ~230 tokens/second
 
 deepseek-v3
