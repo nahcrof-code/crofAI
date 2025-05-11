@@ -58,6 +58,7 @@ qwen-qwq-32b
 gemma-3-27b-it
 llama-4-scout
 qwen3-235b-a22b
+multilingual-e5-large-instruct
 ```
 # LLM average speeds (tokens/second)
 ```
@@ -103,6 +104,9 @@ Average speed: ~65 tokens/second
 
 qwen3-235b-a22b
 Average speed: ~60 tokens/second
+
+multilingual-e5-large-instruct
+average speed: ~75 tokens/second
 ```
 # Specific API examples
 ## stable-diffusion-xl-base-1.0 (BETA)
