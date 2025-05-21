@@ -123,23 +123,3 @@ Average speed: ~60 tokens/second
 multilingual-e5-large-instruct
 average speed: ~75 tokens/second
 ```
-# Specific API examples
-## stable-diffusion-xl-base-1.0 (BETA)
-### JSON
-POST /v1/premium/stable_diffusion<br>
-HEADERS:<br>
-```
-X-API-Key: api-token-here
-```
-BODY (application/json)
-```json
-{
-    "prompt": "cat"
-}
-```
-RESPONSE 200 OK
-```json
-{
-    "response": "AI response"
-}
-```
