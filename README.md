@@ -1,7 +1,5 @@
 # [CrofAI](https://ai.nahcrof.com/)
 API documentation for crofAI
-## Donation page 
-https://buymeacoffee.com/crofai
 # API/SDK
 CrofAI supports the OpenAI SDK for LLM inference. Below will be a python example.
 ## Python (No Streaming)
