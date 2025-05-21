@@ -41,6 +41,20 @@ for chunk in response:
     if chunk.choices and chunk.choices[0].delta.content:
         print(chunk.choices[0].delta.content, end="", flush=True)
 ```
+## Python (embedding model)
+```python
+from openai import OpenAI
+client = OpenAI(base_url="https://ai.nahcrof.com/v2", api_key="api-key")
+response = client.embeddings.create(
+    input="The quick brown fox jumps over the lazy dog",
+    model="multilingual-e5-large-instruct",
+)
+if response.data and len(response.data) > 0:
+    print("Embedding:", response.data[0].embedding[:5])  # Print first 5
+    print("Total tokens:", response.usage.total_tokens)
+else:
+    print("No embedding data received.")
+```
 
 # AI models / API MODEL-NAME
 ```
