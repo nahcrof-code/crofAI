@@ -65,6 +65,7 @@ llama3.1-405b
 llama3.1-tulu3-405b
 deepseek-r1
 deepseek-r1-turbo
+deepseek-r1-0528
 deepseek-v3
 deepseek-v3-0324
 deepseek-r1-distill-llama-70b
@@ -101,6 +102,9 @@ Average speed: ~25 tokens/second
 
 deepseek-r1-turbo
 Average speed: ~230 tokens/second
+
+deepseek-r1-0528
+Average speed: ~30 tokens/second
 
 deepseek-v3
 Average speed: ~35 tokens/second
