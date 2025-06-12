@@ -81,7 +81,7 @@ multilingual-e5-large-instruct
 ```
 
 llama3.1-8b
-Average speed: ~30 tokens/second
+Average speed: ~50 tokens/second
 
 llama3.3-70b
 Average speed: ~30 tokens/second
