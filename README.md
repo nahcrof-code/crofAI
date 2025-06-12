@@ -68,6 +68,7 @@ deepseek-r1-turbo
 deepseek-r1-0528
 deepseek-v3
 deepseek-v3-0324
+deepseek-v3-0324-turbo
 deepseek-r1-distill-llama-70b
 deepseek-r1-distill-qwen-32b
 qwen-qwq-32b
@@ -111,6 +112,9 @@ Average speed: ~35 tokens/second
 
 deepseek-v3-0324
 Average speed: ~35 tokens/second
+
+deepseek-v3-0324-turbo
+Average speed: ~325 tokens/second
 
 qwen-qwq-32b
 Average speed: ~25 tokens/second
