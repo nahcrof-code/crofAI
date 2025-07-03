@@ -73,6 +73,7 @@ deepseek-r1-distill-llama-70b
 deepseek-r1-distill-qwen-32b
 qwen-qwq-32b
 gemma-3-27b-it
+gemma-3n-e4b-it
 llama-4-scout
 qwen3-235b-a22b
 multilingual-e5-large-instruct
