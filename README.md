@@ -59,19 +59,16 @@ print("Total tokens:", response.usage.total_tokens)
 
 # AI models / API MODEL-NAME
 ```
+kimi-k2
+kimi-k2-turbo
 llama3.1-8b
 llama3.3-70b
-llama3.1-405b
-llama3.1-tulu3-405b
-deepseek-r1
 deepseek-r1-turbo
 deepseek-r1-0528
-deepseek-v3
 deepseek-v3-0324
 deepseek-v3-0324-turbo
 deepseek-r1-distill-llama-70b
 deepseek-r1-distill-qwen-32b
-qwen-qwq-32b
 gemma-3-27b-it
 gemma-3n-e4b-it
 llama-4-scout
