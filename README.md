@@ -8,7 +8,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://ai.nahcrof.com/v2",
-    api_key="api-key"
+    api_key="api-key-here"
 )
 response = client.chat.completions.create(
     model="MODEL-FROM-LIST",
@@ -24,7 +24,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://ai.nahcrof.com/v2",
-    api_key="api-key"
+    api_key="api-key-here"
 )
 
 response = client.chat.completions.create(
