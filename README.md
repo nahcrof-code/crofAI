@@ -61,6 +61,9 @@ print("Total tokens:", response.usage.total_tokens)
 ```
 kimi-k2
 kimi-k2-turbo
+qwen3-coder
+qwen3-235b-a22b-2507-instruct
+qwen3-235b-a22b
 llama3.1-8b
 llama3.3-70b
 deepseek-r1-turbo
@@ -74,58 +77,4 @@ gemma-3n-e4b-it
 llama-4-scout
 qwen3-235b-a22b
 multilingual-e5-large-instruct
-```
-# LLM average speeds (tokens/second)
-```
-
-llama3.1-8b
-Average speed: ~50 tokens/second
-
-llama3.3-70b
-Average speed: ~30 tokens/second
-
-llama3.1-405b-Instruct
-Average speed: ~30 tokens/second
-
-llama3.1-tulu-3-405b
-Average speed: ~30 tokens/second
-
-deepseek-r1-distill-llama-70b
-Average speed: ~30 tokens/second
-
-deepseek-r1-distill-qwen-32b
-Average speed: ~50 tokens/second
-
-deepseek-r1
-Average speed: ~25 tokens/second
-
-deepseek-r1-turbo
-Average speed: ~230 tokens/second
-
-deepseek-r1-0528
-Average speed: ~30 tokens/second
-
-deepseek-v3
-Average speed: ~35 tokens/second
-
-deepseek-v3-0324
-Average speed: ~35 tokens/second
-
-deepseek-v3-0324-turbo
-Average speed: ~325 tokens/second
-
-qwen-qwq-32b
-Average speed: ~25 tokens/second
-
-gemma-3-27b-it
-Average speed: ~80 tokens/second
-
-llama-4-scout
-Average speed: ~65 tokens/second
-
-qwen3-235b-a22b
-Average speed: ~60 tokens/second
-
-multilingual-e5-large-instruct
-average speed: ~75 tokens/second
 ```
