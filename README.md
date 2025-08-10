@@ -61,6 +61,7 @@ print("Total tokens:", response.usage.total_tokens)
 ```
 kimi-k2
 kimi-k2-turbo
+gpt-oss-120b
 qwen3-coder
 qwen3-235b-a22b-2507-instruct
 qwen3-235b-a22b
