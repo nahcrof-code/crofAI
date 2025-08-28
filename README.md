@@ -67,7 +67,7 @@ qwen3-235b-a22b-2507-instruct
 qwen3-235b-a22b
 llama3.1-8b
 llama3.3-70b
-deepseek-r1-turbo
+deepseek-v3.1
 deepseek-r1-0528
 deepseek-v3-0324
 deepseek-v3-0324-turbo
@@ -76,6 +76,4 @@ deepseek-r1-distill-qwen-32b
 gemma-3-27b-it
 gemma-3n-e4b-it
 llama-4-scout
-qwen3-235b-a22b
-multilingual-e5-large-instruct
 ```
