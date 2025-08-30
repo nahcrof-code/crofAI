@@ -68,6 +68,7 @@ qwen3-235b-a22b
 llama3.1-8b
 llama3.3-70b
 deepseek-v3.1
+deepseek-v3.1-reasoner
 deepseek-r1-0528
 deepseek-v3-0324
 deepseek-v3-0324-turbo
