@@ -59,8 +59,10 @@ print("Total tokens:", response.usage.total_tokens)
 
 # AI models / API MODEL-NAME
 ```
+kimi-k2-0905
 kimi-k2
 kimi-k2-turbo
+kimi-k2-eco
 gpt-oss-120b
 qwen3-coder
 qwen3-235b-a22b-2507-instruct
