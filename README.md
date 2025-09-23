@@ -70,6 +70,8 @@ qwen3-235b-a22b-2507-instruct
 qwen3-235b-a22b
 llama3.1-8b
 llama3.3-70b
+deepseek-v3.1-terminus
+deepseek-v3.1-terminus-reasoner
 deepseek-v3.1
 deepseek-v3.1-reasoner
 deepseek-r1-0528
