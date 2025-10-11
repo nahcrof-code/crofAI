@@ -57,6 +57,14 @@ print("Embedding:", response.data[0].embedding[:5])  # Print first 5
 print("Total tokens:", response.usage.total_tokens)
 ```
 
+# Supported Parameters
+- max_tokens
+- temperature
+- top_p
+- stop
+- seed
+- tools
+
 # AI models / API MODEL-NAME
 ```
 kimi-k2-0905
