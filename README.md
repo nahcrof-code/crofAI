@@ -39,7 +39,7 @@ for chunk in response:
     if chunk.choices and chunk.choices[0].delta.content:
         print(chunk.choices[0].delta.content, end="", flush=True)
 ```
-## Python (embedding model)
+<!--## Python (embedding model)
 ```python
 from openai import OpenAI
 
@@ -55,7 +55,7 @@ response = client.embeddings.create(
 
 print("Embedding:", response.data[0].embedding[:5])  # Print first 5
 print("Total tokens:", response.usage.total_tokens)
-```
+```-->
 
 # Supported Parameters
 - max_tokens
