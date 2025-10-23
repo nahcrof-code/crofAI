@@ -89,3 +89,6 @@ gemma-3-27b-it
 llama-4-scout
 llama3.3-70b
 ```
+
+# 429 Error codes
+By default, CrofAI does not serve 429 error codes because we do not intend on rate limiting users. However, in the event that a user is registered as a likely bot account (this is unrelated to the amount of usage you handle) your account will only receive 429 error codes. If this is happening to you, contact support and we will unblock your account
