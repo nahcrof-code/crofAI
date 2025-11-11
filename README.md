@@ -66,29 +66,7 @@ print("Total tokens:", response.usage.total_tokens)
 - tools
 
 # AI models / API MODEL-NAME
-```
-kimi-k2-0905
-kimi-k2-0905-turbo
-kimi-k2-eco
-glm-4.6
-glm-4.5
-deepseek-v3.2-exp
-deepseek-v3.1-terminus
-deepseek-v3.1-terminus-reasoner
-deepseek-v3.1
-deepseek-v3.1-reasoner
-deepseek-r1-0528
-deepseek-v3-0324
-deepseek-v3-0324-turbo
-gpt-oss-120b
-qwen3-coder
-qwen3-235b-a22b-2507-instruct
-deepseek-r1-distill-llama-70b
-deepseek-r1-distill-qwen-32b
-gemma-3-27b-it
-llama-4-scout
-llama3.3-70b
-```
+These are available on the /pricing page
 
 # 429 Error codes
 By default, CrofAI does not serve 429 error codes because we do not intend on rate limiting users. However, in the event that a user is registered as a likely bot account (this is unrelated to the amount of usage you handle) your account will only receive 429 error codes. If this is happening to you, contact support and we will unblock your account
