@@ -59,19 +59,17 @@ print("Total tokens:", response.usage.total_tokens)
 
 # Optional endpoints:
 ### OpenAI Compatible
+base_url: ```https://ai.nahcrof.com/v2```<br>
+OR<br>
+base_url: ```https://ai.nahcrof.com/v1``` (available for tools that don't support /v2)
 ```
-base_url: https://ai.nahcrof.com/v2
-OR
-base_url: https://ai.nahcrof.com/v1 # available for tools that don't support /v2
-
 EXAMPLE
 https://ai.nahcrof.com/v2/chat/completions
 https://ai.nahcrof.com/v1/chat/completions
 ```
 ### Anthropic endpoint:
+base_url: ```https://anthropic.nahcrof.com```
 ```
-base_url: https://anthropic.nahcrof.com/v1
-
 EXAMPLE
 https://anthropic.nahcrof.com/v1/messages
 ```
