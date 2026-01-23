@@ -95,6 +95,25 @@ for chunk in stream:
             if tc.function.arguments:
                 print(f"Args: {tc.function.arguments}")
 ```
+
+## /models API
+when visiting `/v1/models` you will receive a standard JSON list containing each model. Each model should look as follows
+```json
+{
+    "context_length": 163840,
+    "created": 1755799640,
+    "id": "deepseek-v3.2",
+    "max_completion_tokens": 163840,
+    "name": "DeepSeek: DeepSeek V3.2",
+    "pricing": {
+        "completion": "0.00000038", // $0.38/m output
+        "prompt": "0.00000028" // $0.28/m input
+    },
+    "quantization": "Q4_0",
+    "speed": 50 // rough estimate
+},
+```
+
 <!--## Python (embedding model)
 ```python
 from openai import OpenAI
@@ -138,8 +157,8 @@ https://anthropic.nahcrof.com/v1/messages
 - seed
 - tools
 
-# AI models / API MODEL-NAME
-These are available on the /pricing page
-
+<!--
+This is technically still true but is commented out since we have changed anti bot measures and **should** be impossible to encounter
 # 429 Error codes
 By default, CrofAI does not serve 429 error codes because we do not intend on rate limiting users. However, in the event that a user is registered as a likely bot account (this is unrelated to the amount of usage you handle) your account will only receive 429 error codes. If this is happening to you, contact support and we will unblock your account
+-->
