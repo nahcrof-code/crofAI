@@ -7,7 +7,7 @@ CrofAI supports the OpenAI SDK for LLM inference. Below will be a python example
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://ai.nahcrof.com/v2",
+    base_url="https://ai.nahcrof.com/v1",
     api_key="api-key-here"
 )
 response = client.chat.completions.create(
@@ -23,7 +23,7 @@ print(response.choices[0].message.content)
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://ai.nahcrof.com/v2",
+    base_url="https://ai.nahcrof.com/v1",
     api_key="api-key-here"
 )
 
@@ -39,12 +39,68 @@ for chunk in response:
     if chunk.choices and chunk.choices[0].delta.content:
         print(chunk.choices[0].delta.content, end="", flush=True)
 ```
+## Python (tool use)
+```python
+from openai import OpenAI
+import json
+
+client = OpenAI(
+    base_url="https://ai.nahcrof.com/v1",
+    api_key="api-key-here"
+)
+
+tools = [{ # tootally original example
+    "type": "function",
+    "function": {
+        "name": "get_horoscope",
+        "description": "Get today's horoscope for an astrological sign.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "sign": {
+                    "type": "string",
+                    "description": "An astrological sign like Taurus or Aquarius",
+                },
+            },
+            "required": ["sign"],
+            "additionalProperties": False,
+        },
+        "strict": True,
+    },
+}]
+
+def get_horoscope(sign):
+    return f"{sign}: Next Tuesday you will befriend a baby otter."
+
+messages = [
+    {"role": "user", "content": "What is my horoscope? I am an Aquarius."}
+]
+
+stream = client.chat.completions.create(
+    model="MODEL-FROM-LIST",
+    messages=messages,
+    tools=tools,
+    stream=True
+)
+
+for chunk in stream:
+    delta = chunk.choices[0].delta
+
+    if delta.content:
+        print(delta.content, end="", flush=True)
+
+    if delta.tool_calls:
+        for tc in delta.tool_calls:
+            print(f"\nTool call: {tc.function.name}")
+            if tc.function.arguments:
+                print(f"Args: {tc.function.arguments}")
+```
 <!--## Python (embedding model)
 ```python
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://ai.nahcrof.com/v2",
+    base_url="https://ai.nahcrof.com/v1",
     api_key="api-key"
 )
 
@@ -59,9 +115,9 @@ print("Total tokens:", response.usage.total_tokens)
 
 # Optional endpoints:
 ### OpenAI Compatible
-base_url: ```https://ai.nahcrof.com/v2```<br>
+base_url: ```https://ai.nahcrof.com/v2``` (the original endpoint)<br>
 OR<br>
-base_url: ```https://ai.nahcrof.com/v1``` (available for tools that don't support /v2)
+base_url: ```https://ai.nahcrof.com/v1``` (same thing, just more standard)
 ```
 EXAMPLE
 https://ai.nahcrof.com/v2/chat/completions
