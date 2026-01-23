@@ -2,7 +2,7 @@
 API documentation for crofAI
 # API/SDK
 CrofAI supports the OpenAI SDK for LLM inference. Below will be a python example.
-## Python (No Streaming)
+## Python (no Streaming)
 ```python
 from openai import OpenAI
 
@@ -18,7 +18,7 @@ response = client.chat.completions.create(
 )
 print(response.choices[0].message.content)
 ```
-## Python (With Streaming)
+## Python (with Streaming)
 ```python
 from openai import OpenAI
 
@@ -38,6 +38,34 @@ response = client.chat.completions.create(
 for chunk in response:
     if chunk.choices and chunk.choices[0].delta.content:
         print(chunk.choices[0].delta.content, end="", flush=True)
+print()
+```
+## Python (reasoning model example)
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://ai.nahcrof.com/v1",
+    api_key="api-key-here"
+)
+
+response = client.chat.completions.create(
+    model="MODEL-FROM-LIST",
+    messages=[
+        {"role": "user", "content": "Howdy there! How are you?"}
+    ],
+    stream=True  # Enable streaming
+)
+
+for chunk in response:
+    try:
+        if chunk.choices and chunk.choices[0].delta.reasoning_content:
+            print(chunk.choices[0].delta.reasoning_content, end="", flush=True)
+    except AttributeError:
+        pass
+    if chunk.choices and chunk.choices[0].delta.content:
+        print(chunk.choices[0].delta.content, end="", flush=True)
+print()
 ```
 ## Python (tool use)
 ```python
@@ -95,7 +123,39 @@ for chunk in stream:
             if tc.function.arguments:
                 print(f"Args: {tc.function.arguments}")
 ```
+## Python (vision models)
+```python
+from openai import OpenAI
 
+client = OpenAI(
+    base_url="https://ai.nahcrof.com/v1",
+    api_key="api-key-here"
+)
+
+response = client.chat.completions.create(
+    model="llama-4-scout", # vision models are labeled in the pricing page with the (vision) tag
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "What is in this image?"},
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": "https://files.nahcrof.com/file/crofai-black.png",
+                    },
+                },
+            ],
+        }
+    ],
+    stream=True
+)
+
+for chunk in response:
+    if chunk.choices and chunk.choices[0].delta.content:
+        print(chunk.choices[0].delta.content, end="", flush=True)
+print()
+```
 ## /models API
 when visiting `/v1/models` you will receive a standard JSON list containing each model. Each model should look as follows
 ```json
